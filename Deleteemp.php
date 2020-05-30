@@ -24,7 +24,7 @@ if (isset($_POST["Submit"])) {
 <link rel="stylesheet" href="css/style.css">
 
 
-
+<title>حذف اسماء الموظفين</title>
 
 <!-- MAIN CSS -->
 
@@ -126,7 +126,7 @@ if (isset($_POST["Submit"])) {
              </div>
              <div class="row">
                <div class="col-lg-6 mb-2">
-                 <a href="fs344.html" class="btn btn-warning btn-block"><i class="fas fa-arrow-left"></i>العودة للصفحة الرئسية</a>
+                 <a href="index.php" class="btn btn-warning btn-block"><i class="fas fa-arrow-left"></i>العودة للصفحة الرئسية</a>
                </div>
                <div class="col-lg-6 mb-2">
                  <button type="submit" name="Submit" class="btn btn-success btn-block" value="Employees.php">

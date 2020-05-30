@@ -55,7 +55,7 @@ http://www.tooplate.com/view/2099-scenic
                     <span class="icon icon-bar"></span>
                </button>
                <!-- lOGO -->
-               <a href="index.html" class="navbar-brand">FS344</a>
+               <a href="index.php" class="navbar-brand">FS344</a>
           </div>
 
           <!-- MENU LINKS -->
@@ -63,7 +63,7 @@ http://www.tooplate.com/view/2099-scenic
                <ul class="nav navbar-nav navbar-right">
                     <li><a href="Employees.php" class="smoothScroll">الموظفين</a></li>
                     <li><a href="Products.php" class="smoothScroll">المنتجات</a></li>
-                    <li><a href="ٍٍSales.php" class="smoothScroll">المبيعات</a></li>
+                    <li><a href="Sales.php" class="smoothScroll">المبيعات</a></li>
                     <li><a href="Branch.php" class="smoothScroll">الفرع</a></li>
 
                </ul>

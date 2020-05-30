@@ -1,5 +1,8 @@
 <?php
 require_once("Include/DB.php");
+require_once("Include/Sessions.php");
+require_once("Include/Functions.php");
+require_once("navbar.php");
 $SearchQueryParameter = $_GET["id"];
 if (isset($_POST["Submit"])) {
       $Name = $_POST["Name"];
@@ -24,7 +27,7 @@ if (isset($_POST["Submit"])) {
 <link rel="stylesheet" href="css/style.css">
 
 
-
+<title>تعديل أسماء الموظفين</title>
 
 <!-- MAIN CSS -->
 
@@ -45,42 +48,12 @@ if (isset($_POST["Submit"])) {
     }
     ?>
 <div align=right dir=rtl>
-  <div style="height:10px; background: #133922;"></div>
 <div class="nav11">
-  <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-    <a class="navbar-brand ml-auto" style="color: #fff;" href="fs344.html"> FS344</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapseCMS">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <div class="collapse navbar-collapse" id="navbarcollapseCMS"
-      style="font-size: 25px;" style="‎font-style: bold;">
 
 
-      <ul class="navbar-nav ml-auto">
 
-                <li class="nav-item">
-          <a class="nav-link" style="color: #fff;" href="Products.php">المنتجات</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: #fff;" href="ٍٍSales.php">المبيعات</a>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fff;" href="Branch.php">طلبات الصيانة</a>
-            <li class="nav-item">
-              <a class="nav-link" style="color: #fff;" href="users.php">المستخدمين</a>
-            </li><li class="nav-item">
-              <a class="nav-link" style="color: #fff;" href="fs344.html">الصفحة الرئيسة</a>
-            </li>
-          </li>
-        </li>
-
-              </ul>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="Logout.php" class="nav-link" style="color: #fff;"><i class="fas fa-user" style="color: #e62e00;"></i>  تسجيل الخروج</a></li>
-              </ul>
-            </div>
-        </div>
-  </nav>
+</div>
 </div>
   <div style="height:10px; background: #133922;"></div>
 <!-- PRE LOADER -->
@@ -88,7 +61,7 @@ if (isset($_POST["Submit"])) {
 <div class="container">
 <div class="row">
   <div class="col-md-12">
-    <h1><i class="fas fa-user-edit" style="color:#27aae1;"></i>تعديل بيانات الموظف</h1>
+    <h1><i class="fas fa-user-edit" style="color:#27aae1;"></i> تعديل بيانات الموظف</h1>
 </div>
 </div>
 </div>
@@ -126,7 +99,7 @@ if (isset($_POST["Submit"])) {
              </div>
              <div class="row">
                <div class="col-lg-6 mb-2">
-                 <a href="fs344.html" class="btn btn-warning btn-block"><i class="fas fa-arrow-left"></i>العودة للصفحة الرئسية</a>
+                 <a href="index.php" class="btn btn-warning btn-block"><i class="fas fa-arrow-left"></i>العودة للصفحة الرئسية</a>
                </div>
                <div class="col-lg-6 mb-2">
                  <button type="submit" name="Submit" class="btn btn-success btn-block" value="Employees.php">
